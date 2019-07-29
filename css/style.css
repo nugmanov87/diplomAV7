@@ -1,0 +1,1040 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+  
+@font-face {
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: OpenSans, Arial, sans-serif;
+}
+
+.welcome {
+  background-image: url("../images/football_1920.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-color: #000000; 
+  padding-bottom: 105px; 
+}
+  
+.welcome::after {
+  content: "";
+  background-color: #0a0e34;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+}
+  
+.header-logo {
+  position: relative;
+  display: flex;
+  margin: auto;
+  padding-top: 45px; 
+  width: 191px;
+  height: 52px;
+  z-index: 2;
+  fill: #ffffff;
+}
+  
+.welcome-title {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1550px;
+  padding-top: 265px;
+  letter-spacing: 5px;
+  z-index: 10;
+  text-transform: uppercase;
+  font-size: 90px;;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.welcome-title2 {
+  display: flex;
+  justify-content: flex-end;
+  line-height: 60px;
+}
+
+.group-link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 230px;
+}
+  
+.app-store, .google-play {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 30px;
+  width: 275px;
+  height: 80px;
+  border: none;
+  z-index: 2;
+  background-color: #5e42b0;
+  border-radius: 100px;
+  outline-style: none;
+}
+
+.app-store:hover, .google-play:hover {
+  background-color: #f70707;
+}
+
+.app-store {
+  margin-right: 57px;
+}
+ 
+.logo-app, .logo-play {
+  width: 60px; 
+  fill: #ffffff;
+  padding-left: 30px;
+  padding-bottom: 15px;
+}
+
+.logo-play {
+  width: 50px; 
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+.group-link-text {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;     
+}
+
+.group-link-text2 {
+  padding-right: 45px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.bold-link {
+  font-weight: bold; 
+  text-transform: uppercase;
+  font-size: 14px; 
+}
+
+.bold-link2 {
+  display: flex;
+  font-weight: bold; 
+  text-transform: uppercase;
+  font-size: 14px; 
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+   
+h2  {  
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-size: 80px;
+  color: #e7e7e7;
+  font-weight: bold; 
+}
+
+.athlets-players {
+  position: relative;
+  flex: auto;
+  width: 100%;
+  margin-top: 90px;
+}
+
+.athlets-players h3 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #c1c1c1;
+  font-weight: bold;  
+}
+
+.athlets-players h3::after {
+  content: "";
+  display: block; 
+  margin-top: -15px;     
+  width: 24px;
+  height: 5px;       
+  background-color: #5e42b0;
+  border: none;
+}
+
+.athlets-players .growth h3::after {
+  background-color: #efefef; 
+}
+
+.athlets-players .growth2 h3::after {
+  background-color: #ffffff; 
+}   
+    
+.foots-img {
+  position: absolute;
+  left: 20%;
+  top: -8%;
+  z-index: 2;
+}
+
+p {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.growth p {
+  color: #ffffff;
+}
+
+.growth2 p {
+  color: #d2d3da;
+}
+
+.index {
+  font-size: 18px;
+  font-weight: bold; 
+  color: #000000;
+  margin-right: 10px;
+  vertical-align: 12px;
+}
+
+.growth2 .index  {
+  color: #9173e6; 
+}
+
+.athlets, .connection, .colloboration, .growth {
+  padding-left: 53%;
+  padding-right: 180px;
+  list-style: none; 
+}
+
+.colloboration {
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.players, .connection2, .colloboration2, .growth2 {
+  padding-left: 190px;
+  padding-right: 50%;
+  list-style: none;
+}
+
+.connection, .connection2, .colloboration, .colloboration2, .growth, .growth2 {
+  padding-top: 38px;
+  padding-bottom: 50px;
+}
+
+.colloboration, .colloboration2 {
+  background-color: #f6f4fa; 
+}
+
+.colloboration2 {
+  margin-bottom: 50px;
+}
+
+.growth {
+  background-color: #5e42b0; 
+}
+
+.growth2 {
+  background-color: #0a0e34; 
+}
+
+.baskets-img {
+  position: absolute;
+  right: 6%;
+  top: -9%;
+  z-index: 2;
+}
+
+.article-post {
+  position: relative;
+}
+
+.active, .work {  
+  display: flex;
+  position: relative;
+}
+
+.human-img, .oldhuman-img, .work-img {
+  width: 50%;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.post1, .post2 {
+  width: 50%;
+}
+
+.post1 {
+  margin-top: 240px;
+}
+
+.post1 h3, .post2 h3 {
+  margin-bottom: 100px;
+  margin-left: 130px;
+  text-transform: uppercase;
+  font-size: 80px;
+  color: #e7e7e7;
+  font-weight: bold;
+}
+
+.post1 p, .post2 p  {
+  font-size: 24px;
+  margin-left: 130px;
+}
+
+.contact {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.post2 {
+  margin: 0 auto;
+  padding-top: 250px; 
+}
+
+.number  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold; 
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  width: 8.5%;
+  height: 21%;
+  top: 28%;
+  position: absolute;
+  background-color: #5e42b0;
+}
+
+.active::before, .contact::before, .work::before {
+  content: "";
+  left: calc(50% - 13px);
+  top: 41%;
+  width: 26px;
+  height: 5px;
+  
+  position: absolute;
+  background-color: #8f7bc8;
+  z-index: 2;
+}
+
+.footer {
+  background-image: url("../images/game_1920.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-color: #000000;  
+}
+      
+.footer::after {
+  content: "";
+  background-color: #0a0e34;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+}
+
+.logo-button {
+  width: 132px;
+  height: 138px;
+  border: none;
+  margin-top: 225px;    
+  z-index: 2;
+  background-color: #543aa0;
+  border-radius: 25px;
+  outline-style: none;
+}
+
+.logo-container {
+  margin: auto;
+  width: 100px;
+  z-index: 2;
+  fill: #ffffff;
+}
+
+.text-footer {
+  margin-left: 30px;
+  margin-top: 240px;
+}
+
+.container-logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-logo .text1 {
+  position: relative;
+  padding-top: 35px;
+  font-size: 80px;
+  letter-spacing: 3px;
+  line-height: 10px;
+  font-weight: bold; 
+  color: #ffffff;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.container-logo .text2 {
+  position: relative;
+  font-size: 30px;
+  color: #a496ca;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.group-link2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+   
+.footer-logo {
+  position: relative;
+  display: flex;
+  margin: auto;
+  margin-top: 260px; 
+  padding-bottom: 55px;
+  width: 191px;
+  height: 52px;
+  z-index: 2;
+  fill: #ffffff;
+}
+
+
+@media (min-width: 961px) and (max-width: 1400px) {
+ 
+  
+  .welcome-title {
+    position: relative;
+    margin: 0 50px;
+    max-width: 1550px;
+    padding-top: 265px;
+    letter-spacing: 5px;
+    font-size: 90px;;
+  }
+  
+  .welcome-title2 {
+    line-height: 90px;
+  }
+      
+  .foots-img {
+    width: 50%;
+    left: 1%;
+  }
+  
+  .baskets-img {
+    width: 60%;
+    top: -2%;
+    right: 1%;
+  }
+
+  .article-post p {
+    padding-right: 50px;
+  }
+  
+  .post1 {
+    margin-top: 20px;
+  }
+  
+  .post1 h3, .post2 h3 {
+    font-size: 65px;
+    margin-bottom: 40px;
+  }
+  
+  .post2 {
+    padding-top: 20px; 
+  }
+  
+  .active::before, .contact::before, .work::before {
+    top: 44.5%;
+  }
+}
+
+
+@media (min-width: 641px) and (max-width: 960px) {
+
+
+  .welcome {
+    background-image: url("../images/football_767.jpg"); 
+    background-size: cover;
+    padding-bottom: 90px;
+  }
+
+  .header-logo {
+    padding-top: 40px; 
+    padding-left: 0;
+  }
+        
+  .welcome-title {
+    padding-left: 85px;
+    padding-top: 168px;
+    letter-spacing: 3px;
+    line-height: 80px;
+    font-size: 64px;; 
+  }
+      
+  .welcome-title2 {
+    margin-bottom: 305px;
+    padding-left: 107px;
+    padding-top: 5px;
+    letter-spacing: 4px;
+    line-height: 70px;
+  } 
+  
+  .group-link {
+    padding-left: 0;
+  }
+      
+  .app-store {
+    margin-right: 30px;
+  }
+     
+  h2  {  
+    margin-bottom: 20px;
+  }
+
+  .athlets-players {
+    margin-top: 55px;
+  }
+
+  .athlets {
+    margin-bottom: 0;
+  }
+
+  .index {
+    vertical-align: 10px;
+  }
+      
+  .athlets-players h3 {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+      
+  .athlets-players h3::after {
+    margin-left: 2px;    
+    width: 20px;
+  }
+      
+  p {
+    font-size: 17px;
+  }
+           
+  .athlets, .connection, .colloboration, .growth {
+    padding-left: 285px;
+    
+  }  
+  .players, .connection2, .colloboration2, .growth2 {
+    padding-left: 25px;
+  }
+
+  .players {
+    margin-bottom: 0;
+  }
+      
+  .connection, .colloboration, .growth {
+    padding-top: 35px;
+    padding-right: 45px;
+    padding-bottom: 22px;
+  }
+
+  .connection2 {
+    padding-bottom: 30px;
+  }
+
+  .connection2 h3 {
+    margin-bottom: 25px;
+  }
+
+  .colloboration2 {
+    margin-bottom: 10px;
+    padding-top: 35px;
+    padding-right: 50%;
+    padding-bottom: 22px;
+  }
+
+  .growth2 {
+    padding-bottom: 37px;
+  }
+
+  .growth2 h3 {
+    margin-bottom: 20px;
+  }
+      
+  .foots-img {
+    left: -21%;
+    top: 6%;
+  }
+      
+  .baskets-img {
+    right: 0%;
+    top: -2%;
+  }
+
+  .active, .contact, .work {
+    display: block;
+    width: 100%;
+  }
+
+  .post1, .post2 {
+    width: 100%;
+    margin: 70px 0 100px 20px;
+    padding-top: 0; 
+  }
+
+  .post2 {
+    margin-top: 55px;
+    margin-bottom: 105px;
+  }
+
+  .post1 h3, .post2 h3 {
+    margin-left: 0;
+    margin-bottom: 3px;
+  }
+  
+  .post1 p, .post2 p {
+     margin-left: 0;
+     padding-right: 100px;
+  }
+
+  .work .post1 {
+     margin-bottom: 110px;
+  }
+
+  .work .post1 p {
+    padding-right: 120px;
+  }
+      
+  .number  {
+    font-size: 24px;
+    width: 15%;
+    height: 14%;
+    left: 12%;
+    top: 60.5%;
+  }
+      
+  .active::before, .contact::before, .work::before {
+    width: 28px;
+    height: 5px;
+    left: calc(12% - 14px);
+    top: 69.5%;
+  }
+      
+  .footer {
+    display: block;
+    width: 100%;
+    background-image: url("../images/game_1280.jpg"); 
+  }
+
+  .container-logo {
+    display: block; 
+    padding-left: 0;
+  }
+      
+  .logo-button {
+    position: relative;
+    margin-top: 120px;
+    margin-left: 320px;
+  }
+      
+  .text-footer {
+    margin-left: 15px;;
+    margin-top: 50px;
+    text-align: center;
+    padding-right: 16px;
+  }
+      
+  .container-logo .text1 {
+    margin-bottom: 15px;
+    font-size: 80px;
+    letter-spacing: 5px;
+    line-height: 60px;
+  }
+      
+  .container-logo .text2 {
+    font-size: 36px;
+    padding-right: 0;
+  }
+      
+  .group-link2 {
+    margin-top: 275px;
+    padding-left: 0;
+  }
+
+  .logo-app {
+    width: 45px; 
+    padding-top: 15px;
+  }
+
+  .logo-play {
+    width: 45px;
+    padding-left: 35px;
+    padding-top: 15px;
+  }
+      
+  .footer-logo {
+    margin-top: 55px;
+    padding-right: 0; 
+    width: 215px;
+    height: 52px;
+  }        
+}
+
+
+
+@media (max-width: 640px) {
+
+  .welcome {
+    background-image: url("../images/football_767.jpg"); 
+    padding-bottom: 85px;
+    background-size: cover;
+  }
+
+  .header-logo {
+    padding-top: 32px;
+    padding-left: 0;  
+    width: 134px;
+    height: 38px;
+  }
+        
+  .welcome-title {
+    margin-left: 15px;
+    padding-top: 130px;
+    padding-left: 0;
+    font-size: 28px;
+    line-height: 31px;
+    letter-spacing: 2px;    
+  }
+      
+  .welcome-title2 {
+    display: block;
+    margin-top: 17px;
+    padding-left: 45px;
+    line-height: 35px;
+  }
+      
+  .group-link {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 80px 20px 0;
+    padding-left: 0;
+    z-index: 2;
+  }
+
+  .group-link-text {
+    display: block;
+    padding-left: 5px;
+    font-size: 8px; 
+  }
+        
+  .group-link-text2 {
+    padding-left: 5px;
+    padding-right: 0;
+    font-size: 8px;
+  }
+
+  .bold-link, .bold-link2 {
+    display: flex;
+    font-size: 8px;
+  }
+
+  .app-store, .google-play {
+    display: flex;
+    justify-content: center;
+    width: 280px;
+    height: 35px;
+  }
+      
+  .app-store {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+             
+  .logo-app {
+    width: 25px;
+    padding-top: 10px; 
+    padding-left: 14px;
+  }
+
+  .logo-play {
+    width: 23px;
+    padding-top: 16px; 
+    padding-left: 0;
+  }
+
+  .athlets-players {
+    margin-top: 25px;
+  }
+
+  .athlets, .players {
+    margin-bottom: 250px;
+  }
+
+  h2  {  
+    font-size: 50px;
+  }
+    
+  .athlets-players h3 {
+    margin-bottom: 25px;
+    font-size: 23px;
+  }
+    
+  .athlets-players h3::after {
+    margin-top: -10px;     
+    width: 15px;
+    height: 3px;       
+  }
+        
+  .foots-img {
+    width: 60%;
+    left: 51%;
+    transform: translateX(-50%);
+    top: 5.5%;
+  }
+
+  .index {
+    font-size: 14px;
+    margin-right: 10px;
+    vertical-align: 5px;
+  }
+    
+  p {
+    padding-right: 15px;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }
+      
+  .baskets-img {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5.7%;
+  }
+    
+  .athlets, .connection, .colloboration, .growth, .players, .connection2, .colloboration2, .growth2 {
+    padding-left: 6%;
+    padding-right: 0;
+  }
+    
+  .connection, .connection2, .growth2 {
+    padding-bottom: 65px;
+  }
+
+  .colloboration2 {
+    margin-bottom: 0;
+    padding-bottom: 55px;
+  }
+
+  .growth h3 {
+    padding-top: 18px;
+  }
+
+  .colloboration2 h3 {
+    padding-top: 3px;
+    letter-spacing: 1px;
+  }
+
+  .athlets-players .colloboration2 p {
+    padding-right: 5px;
+  }
+
+  .colloboration {
+    margin-bottom: 0;
+  }
+
+  .growth2 {
+    padding-top: 46px;
+    padding-bottom: 57px;
+  }
+  
+  .active, .contact, .work {  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .human-img, .oldhuman-img, .work-img {
+    width: 100%;
+  }
+
+  .article-post h3 {
+    font-size: 28px;
+  }
+    
+  .post1, .post2 {
+    width: 100%;
+    margin-top: 23px; 
+    margin-bottom: 80px;
+    padding-top: 0; 
+  }
+
+  .work .post1 {
+    margin-bottom: 70px;
+  }
+
+  .post2 {
+    margin-top: 27px;
+  }
+
+  .post1 h3, .post2 h3 {
+    margin-bottom: 15px;
+    margin-left: 20px;
+  }
+
+  .work .post1 h3 {
+    padding-top: 5px;
+  }
+
+  .post1 p, .post2 p  {
+    font-size: 16px; 
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .work .post1 p {
+    margin-right: 10px;
+    padding-right: 0;
+    line-height: 19px;
+  }
+
+  .post2 p {
+    margin-right: 10px;
+    padding-right: 0;
+  }
+                   
+  .number  {
+    font-size: 14px;
+    width: 22%;
+    height: 14%;
+  }
+
+  .active .number  {
+    left: 17%;
+    top: 60.7%;
+  }
+
+  .contact .number  {
+    left: 17%;
+    top: 63.2%;
+  }
+
+  .work .number  {
+    left: 17%;
+    top: 57.5%;
+  }
+    
+  .active::before, .contact::before, .work::before {
+    width: 16px;
+    height: 4px;
+    left: calc(18.3% - 13px);
+    top: 70%;
+  }
+
+  .contact::before {
+    top: 72.5%;
+  }
+
+  .work::before {
+    top: 67%;
+  }
+    
+  .footer {
+    background-image: url("../images/game_767.jpg");
+  }
+
+  .container-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+  }
+          
+  .logo-button {
+    width: 70px;
+    height: 75px;
+    margin-top: 98px;
+    border-radius: 15px;
+  }
+    
+  .logo-container {
+    width: 50px;
+  }
+    
+  .text-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+    margin-left: 0;
+  }
+    
+  .container-logo .text1 {
+    margin-bottom: 13px;
+    padding-top: 57px;
+    font-size: 32px;
+    letter-spacing: 2px;
+    line-height: 20px;
+  }
+    
+  .container-logo .text2 {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+    
+  .group-link2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+    padding-left: 0;
+  }
+
+  .app-store, .google-play {
+    width: 250px;
+  }
+
+            
+  .footer-logo {
+    margin-top: 75px; 
+    padding-bottom: 50px;
+    padding-left: 0;
+    width: 130px;
+  }
+}
+          
+
+
+    
